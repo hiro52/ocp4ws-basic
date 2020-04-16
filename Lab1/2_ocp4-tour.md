@@ -109,7 +109,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
     >コンソール右上のユーザー名が自身の<User_ID>であることを確認しましょう
 
-1. プロジェクト名(例: `user00-lab1-2` )を指定し，**Create** を選択します。  
+2. プロジェクト名(例: `user00-lab1-2` )を指定し，**Create** を選択します。  
 
     ![](images/ocp4-console-create-project-2.png)
 
@@ -134,7 +134,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
     ![](images/ocp4-console-project-status.png)
 
-1. [Projects:]をクリックし [openshift-console] をクリックします。
+2. [Projects:]をクリックし [openshift-console] をクリックします。
 
     ![](images/ocp4-console-project-openshift-console.png)
 
@@ -143,7 +143,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
     ![](images/ocp4-console-project-openshift-console-status.png)
   
-1. openshift-consoleプロジェクトの利用状況について詳細に見ていきます。
+3. openshift-consoleプロジェクトの利用状況について詳細に見ていきます。
 
     グラフ内にカーソルを合わせて選択します。
 
@@ -166,13 +166,13 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
     >Prometheusに対して，以下のQueryを投げることで上図の情報を抽出しています。
     > - Query: `namespaces:container_cpu_usage:sum{namespace='openshift-console'}`
 
-1. 任意のメトリクスを指定して描画してみます。
+4. 任意のメトリクスを指定して描画してみます。
 
-    [- insert metric at cursol -] を選択します。  
+    `×`をクリックした後、[- insert Metric at Cursol -] を選択します。  
 
     ![](images/ocp4-console-project-openshift-console-status-prometheus-add-1.png)
 
-    例では，[apiserver_request_count] > Execute にように選択します。  
+    例では，[apiserver_watch_events_total] > Run Queries にように選択します。  
 
     ![](images/ocp4-console-project-openshift-console-status-prometheus-add-2.png)  
 
@@ -199,24 +199,9 @@ Nodeの状態について確認してみましょう。
 
     ![](images/ocp4-compute-nodes.png)
 
-    `ip-10-0-134-224.ap-northeast-1.compute.internal` のような名称で，計6台のNodeが一覧されています。また，MACHINE欄を見ると，`group00-ocp4ws-basic-b9qqj-worker-ap-northeast-1a-t6rgd` や `group00-ocp4ws-basic-b9qqj-master-0` のようにMaster/Workerの文字列が確認できます。
+    `ip-10-0-151-220.ap-southeast-1.compute.internal` のような名称で，計5台のNodeが表示されています。また，MACHINE欄を見ると，`cluster-tokyo-c0bf-rbjdz-master-0` や `cluster-tokyo-c0bf-rbjdz-worker-ap-southeast-1b-n9jmr` のようにMaster/Workerの文字列が確認できます。
 
  
-    例えば，上記のNodeのラベル(紫色のテキスト)をyaml表記すると以下のようになります。後ほどNode設定のyamlを確認しますので，その際に確認してみましょう。
-
-    >```
-    >labels:
-    >  beta.kubernetes.io/os: linux
-    >  failure-domain.beta.kubernetes.io/zone: ap-northeast-1a
-    >  node-role.kubernetes.io/worker: ''
-    >  failure-domain.beta.kubernetes.io/region: ap-northeast-1
-    >  node.openshift.io/os_id: rhcos
-    >  beta.kubernetes.io/instance-type: m4.large
-    >  kubernetes.io/hostname: ip-10-0-134-224
-    >  beta.kubernetes.io/arch: amd64
-    > 
-    >```
-
 2. 任意のWorkerを選択して詳細を確認します。
 
     ![](images/ocp4-compute-nodes-expand-worker.png)
@@ -226,7 +211,7 @@ Nodeの状態について確認してみましょう。
     
     ![](images/ocp4-compute-nodes-worker_overview.png)
 
-    [YAML]タブでは，OpenShift4上で管理されるNode情報をyaml形式で確認できます。Node名やアノテーション，さきほど確認したラベルなどの記載があります。
+    [YAML]タブでは，OpenShift4上で管理されるNode情報をyaml形式で確認できます。Node名やアノテーション，ラベルなどの記載があります。
     
     ![](images/ocp4-compute-nodes-worker_yaml_rect.png)
     
