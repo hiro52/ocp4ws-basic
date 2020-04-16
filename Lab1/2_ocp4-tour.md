@@ -115,7 +115,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
     ![](images/ocp4-console-create-project-3.png)
     
-    また，作成したプロジェクトは，[Home] > [Projects] と辿ることで確認できます。 `user00-lab-2`をクリックします。  
+    また，作成したプロジェクトは，[Home] > [Projects] と辿ることで確認できます。 `今作成したプロジェクト`をクリックします。  
 
     ![](images/ocp4-console-project.png)
 
