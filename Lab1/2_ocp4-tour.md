@@ -216,7 +216,7 @@ Nodeの状態について確認してみましょう。
     ![](images/ocp4-compute-nodes-worker_yaml_rect.png)
     
     [Pods]タブでは，指定したNode上で動作するPod一覧を確認できます。  
-    例えば，`openshift-monitoringネームスペース`に属する grafanaのPodや，alertManagerなどが動作していることが分かります。
+    例えば，`openshift-monitoringネームスペース`に属する grafanaのPodや，alertManagerなどが動作していることが分かります。なお、環境によってはこれらのPod は今見ている worker ノードでは動いてないかも知れません。見当たらない場合は、他の worker ノードを見てみてください。
     
     ![](images/ocp4-compute-nodes-worker_pod.png)
     
