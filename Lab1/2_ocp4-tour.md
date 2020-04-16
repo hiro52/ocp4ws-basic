@@ -113,10 +113,9 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
     ![](images/ocp4-console-create-project-2.png)
 
-
     ![](images/ocp4-console-create-project-3.png)
-
-    また，作成したプロジェクトは，[Home] > [Projects] と辿ることで確認できます。
+    
+    また，作成したプロジェクトは，[Home] > [Projects] と辿ることで確認できます。 `user00-lab-2`をクリックします。  
 
     ![](images/ocp4-console-project.png)
 
@@ -127,7 +126,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 **注意:**  
 **プロジェクト確認については参照系のみです。変更は行わないようにしてください。複数人でクラスターを共用しているため，変更を加えてしまうと他の方の作業に影響が出てしまいます。**  
 
-1. [Home] > [Status] > [Projects: 自身のプロジェクト] > [Dashboard] を選択します。
+1. [Home] > [Projects] > [Projects: 自身のプロジェクト] > [Dashboard] が選択されていることを確認します。
 
     ![](images/ocp4-console-project-status-own.png)
 
@@ -135,12 +134,12 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
     ![](images/ocp4-console-project-status.png)
 
-1. [Projects:]のプルダウンメニューから [openshift-console] を選択します。
+1. [Projects:]をクリックし [openshift-console] をクリックします。
 
     ![](images/ocp4-console-project-openshift-console.png)
 
     openshift-consoleプロジェクトにおけるCPUやメモリなどのリソース利用状況が確認できました。  
-    さらに下方では，Podによるメモリ利用量と，利用量の大きい順にTOP10が一覧表示されています。  
+    さらにPodによるメモリ利用量をクリックすると，利用量の大きい順に一覧表示されます。  
 
     ![](images/ocp4-console-project-openshift-console-status.png)
   
