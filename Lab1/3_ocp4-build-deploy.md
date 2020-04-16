@@ -62,8 +62,6 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
     >
     >OpenShift4ではプロジェクトを作成することで，新規Namespace(=プロジェクト名)が生成されます。NamespaceはK8sクラスターを論理的に分離させることが可能なK8sリソースの一種です。例えば，アプリA用のNamespaceを`ns_appa`，アプリB用のNamespaceを`ns_appb`のように作成することで，同一のK8sクラスター内に存在するns_appaとns_appbが干渉しないように構成することも可能です。
 
-    ![](images/ocp4-lab1-3-create-project-result.png)
-
 ### 3-3-2. カタログでソースを指定してビルド&デプロイ
 1. [Catalog] > [Developer Catalog] > [Python] テンプレート を選択します。
 
