@@ -128,7 +128,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
 1. [Home] > [Projects] > [Projects: 自身のプロジェクト] > [Dashboard] が選択されていることを確認します。
 
-    ![](images/ocp4-console-project-status-own.png)
+    ![](images/ocp4-console-project-status-own-n.png)
 
     以下のような画面が表示されます。ただ，作成したばかりのプロジェクトなので特に情報がありません。
 
