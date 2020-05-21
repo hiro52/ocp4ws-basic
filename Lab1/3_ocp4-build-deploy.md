@@ -63,11 +63,19 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
     >OpenShift4ではプロジェクトを作成することで，新規Namespace(=プロジェクト名)が生成されます。NamespaceはK8sクラスターを論理的に分離させることが可能なK8sリソースの一種です。例えば，アプリA用のNamespaceを`ns_appa`，アプリB用のNamespaceを`ns_appb`のように作成することで，同一のK8sクラスター内に存在するns_appaとns_appbが干渉しないように構成することも可能です。
 
 ### 3-3-2. カタログでソースを指定してビルド&デプロイ
-1. [Developer] > [Developer] > [From Git] を選択します。 
+OpenShift が持つカタログソースからアプリケーションをビルド・デプロイしてみましょう♬  
+1. [Developer] > [Developer] > [From Git] を選択します。  
 
     ![](images/ocp4-lab1-3-devcatalog-python.png)
     
-1. [Python] テンプレート を選択します。
+1. 次に，**[以下の項目項目]** を指定し，最後に **[Create]** を選択します。  
+    - Git Repo URL: `https://github.com/openshift-katacoda/blog-django-py`
+    - Builder Image: `Python`
+    - Builder Image Version: `python:3.6`
+    - Application Name: `blog-django-py-app`
+    - Name: `blog-django-py`
+    - Resources: Deployment 
+    - Create a route to the application: `チェックを外す`
 
     ![](images/ocp4-lab1-3-devcatalog-python-create.png)
 
@@ -85,18 +93,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
     >- Route
     >    - クラスター外にワークロードを公開
 
-1. アプリケーションのリポジトリなどを指定して，OpenShift4上にアプリケーションをデプロイします。
-
-    最初に，**[Create Application]**　を選択します。  
-    ![](images/ocp4-lab1-3-devcatalog-python-create.png)
-    
-    次に，**[リポジトリなどいくつかの項目]** を指定し，最後に **[Create]** を選択します。  
-
-    - Namespace: `自身のプロジェクト名 (例: blog-user00)`
-    - Version: `python:3.6`
-    - Name:`任意の名前(例: blog-user00)`
-    - Git Repoaitory: `https://github.com/openshift-katacoda/blog-django-py` 
-    - Create route: `デフォルト(チェックを外した状態)`
+  
 
     ![](images/ocp4-lab1-3-devcatalog-python-create-repo.png)
     
