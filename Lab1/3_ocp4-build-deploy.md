@@ -150,8 +150,8 @@ OpenShift が持つカタログソースからアプリケーションをビル�
     >
     >![](images/ocp4-lab1-3-blog-route-detail.png)
     
-### 3-3-5. アプリケーションの動作確認
-1. [Networking] > [Routes] を選択し，blog用のRouter(例: `blog-user00`)行にある **Location欄のリンク** を開きます。
+### 3-3-5. ルートを作成しアプリケーションの動作を確認してみましょう
+1. まず、左上から [Developer] → [Administrator] に戻り、[Networking] > [Routes] を選択。さらに、blog用のRouter(例: `blog-user00`)行にある **Location欄のリンク** を開きます。
     例) `http://blog-user00-blog-user00.apps.group00-ocp4ws-basic.capsmalt.org`
 
     ![](images/ocp4-lab1-3-blog-confirm-app.png)
