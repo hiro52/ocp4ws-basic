@@ -79,7 +79,14 @@ OpenShift が持つカタログソースからアプリケーションをビル�
 
     ![](images/ocp4-lab1-3-devcatalog-python-create.png)
     ![](images/ocp4-lab1-3-devcatalog-python-create-repo2.png)
+    
+  
+    以上の手順で，blogアプリケーションをOpenShift4上にデプロイできました。  
+    暫く待つと以下のように表示され、正常にコンテナが稼働していることが分かります。  
 
+    ![](images/ocp4-lab1-3-blog-pods-status-1of1.png)    
+  
+  
     >Tips:
     >
     >Developer CatalogからPythonアプリケーションを作成することで以下のリソースが作成されます。
@@ -93,14 +100,6 @@ OpenShift が持つカタログソースからアプリケーションをビル�
     >    - クラスター内にワークロードを公開
     >- Route
     >    - クラスター外にワークロードを公開
-
-  
-
-    
-    以上の手順で，blogアプリケーションをOpenShift4上にデプロイできました。  
-    暫く待つと以下のように表示され、正常にコンテナが稼働していることが分かります。  
-
-    ![](images/ocp4-lab1-3-blog-pods-status-1of1.png)  
     
 ### 3-3-3. blogアプリケーションの状態を確認
 1. [Workloads] > [Pods] > [指定したアプリ名 (例: blog-user00)] のように選択します。
