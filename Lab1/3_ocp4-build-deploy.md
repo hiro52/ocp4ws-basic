@@ -64,11 +64,12 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
 ### 3-3-2. カタログでソースを指定してビルド&デプロイ
 1. [Developer] > [Developer] > [From Git] を選択します。 
-    ![](images/ocp4-lab1-3-devcatalog-python.png)
-    
-1. [Catalog] > [Developer Catalog] > [Python] テンプレート を選択します。
 
     ![](images/ocp4-lab1-3-devcatalog-python.png)
+    
+1. [Python] テンプレート を選択します。
+
+    ![](images/ocp4-lab1-3-devcatalog-python-create.png)
 
     >Tips:
     >
