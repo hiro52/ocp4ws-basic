@@ -78,6 +78,7 @@ OpenShift が持つカタログソースからアプリケーションをビル�
     - Create a route to the application: `チェックを外す`
 
     ![](images/ocp4-lab1-3-devcatalog-python-create.png)
+    ![](images/ocp4-lab1-3-devcatalog-python-create-repo.png)
 
     >Tips:
     >
@@ -95,7 +96,6 @@ OpenShift が持つカタログソースからアプリケーションをビル�
 
   
 
-    ![](images/ocp4-lab1-3-devcatalog-python-create-repo.png)
     
     以上の手順で，blogアプリケーションをOpenShift4上にデプロイできました。  
     
