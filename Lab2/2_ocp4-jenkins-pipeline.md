@@ -83,6 +83,7 @@ ocコマンドを使用して，クラスターにログインします。
     (例: `jenkins-jenkins-user00.apps.group00-ocp4ws-basic.capsmalt.org`)
 
     OpenShift4のログイン情報を使用してJenkinsのUIにログインします。
+    LABのリソースがひっ迫していると、Jenkins 接続までに、15分くらいかかることがあります。正常に接続出来ない時は少し待ってから再度実行してみてください。  
     
     ![](images/jenkins_login_1.png)
     
