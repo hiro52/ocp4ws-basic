@@ -51,29 +51,14 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 
 1. 次に，**[以下の項目項目]** を指定し，最後に **[Create]** を押下します。  
     - Image name from external registry: `quay.io/openshiftlabs/workshop-terminal:2.4.0`
-    - Application Name: workshop-terminal-app
-    - Name: workshop-terminal
-    - Resources: Deployment
+    - Application Name: `workshop-terminal-app`
+    - Name: `workshop-terminal`
+    - Resources: `Deployment`
     - Create a route to the application: `チェックを外す`
 
     ![](images/ocp4-lab2-1-create_application_using_existedImage-2.png)  
     ![](images/ocp4-lab2-1-create_application_using_existedImage-3.png) 
   
-    以上の手順で，blogアプリケーションをOpenShift4上にデプロイできました。  
-    暫く待つと以下のように表示され、正常にコンテナが稼働していることが分かります。  
-
-    ![](images/ocp4-lab1-3-blog-pods-status-1of1.png)    
-  
-
-1. **Namespace**(プロジェクト名)，と**Image Name** を指定します。
-    - Namespace: `各自の作成済プロジェクト(例: workshop-terminal-user00)`
-    - Image Name: `quay.io/openshiftlabs/workshop-terminal:2.4.0`
-
-    ![](images/ocp4-lab2-1-create_application_using_existedImage-2.png)
-
-1. **検索ボタン** をクリックし，Name(workshop-terminal)を確認して，**Deploy** を選択します。
-
-    ![](images/ocp4-lab2-1-create_application_using_existedImage-3.png)
 
 ## 1-3. Routerの作成と動作確認
 ### 1-3-1. 外部アクセスのためのRouterを作成
