@@ -64,7 +64,7 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
 ### 1-3-1. 外部アクセスのためのRouterを作成
 現在のworkshop-terminalアプリケーションは，OpenShift4クラスター内に閉じた状態ですので，外部からアクセスできるように Router を作成しましょう。  
 
-1. [Networking] > [Routes] > [Create Route] を選択します。
+1. 左上の [Developer] を　[Administrator] に変更し、さらに、[Networking] > [Routes] > [Create Route] を選択します。
 
     ![](images/ocp4-lab2-1-workshop-terminal-create-route.png)
 
