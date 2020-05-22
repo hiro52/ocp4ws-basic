@@ -45,9 +45,11 @@ OpenShift4コンソールで各自のプロジェクトを作成しましょう�
     ![](images/ocp4-lab2-1-create-project-workshop-terminal.png)
 
 ### 1-2-2. 既存コンテナイメージのデプロイ
-1. **Add > Deploy Image** のように選択します。
+1. 左上から **[Developer]　> [Container Image]** を選択します。  
 
     ![](images/ocp4-lab2-1-create_application_using_existedImage.png)
+
+[Home] > [Projects] > [Create Project] 
 
 1. **Namespace**(プロジェクト名)，と**Image Name** を指定します。
     - Namespace: `各自の作成済プロジェクト(例: workshop-terminal-user00)`
